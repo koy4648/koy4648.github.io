@@ -21,6 +21,24 @@
 </head> 
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Youngseo Kim</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="wrapper mt-lg-5">
         <div class="sidebar-wrapper">
             <div class="profile-container">
@@ -36,51 +54,14 @@
                     <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/koy4648/" target="_blank">github.com/koy4648</a></li>
                 </ul>
             </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
-                <div class="item">
-                    <h4 class="degree">인공지능융합대학원 (특수대학원) 석사 과정</h4>
-                    <h5 class="meta">연세대학교</h5>
-	                    <div class="time"> - 2027.08 (졸업 예정)</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">신학/컴퓨터과학/스포츠레저학</h4>
-                    <h5 class="meta">연세대학교</h5>
-                    <div class="time">2016.03 - 2022.08</div>
-                </div><!--//item-->
-            </div><!--//education-container-->
             
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Certifications</h2>
-                <div class="item">
-                    <h4 class="degree">정보처리기사</h4>
-                    <h5 class="meta">한국산업인력공단</h5>
-                    <div class="time">2025.09.12</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">리눅스 마스터 2급</h4>
-                    <h5 class="meta">한국정보통신진흥협회</h5>
-                    <div class="time">2025.03.28</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">SQLD</h4>
-                    <h5 class="meta">한국데이터산업진흥원</h5>
-                    <div class="time">2023.07.07</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">컴퓨터활용능력시험 1급</h4>
-                    <h5 class="meta">대한상공회의소</h5>
-                    <div class="time">2021.09.10</div>
-                </div><!--//item-->
-            </div><!--//certifications-container-->
-            
-            <div class="languages-container container-block">
+            <!--//<div class="languages-container container-block">
                 <h2 class="container-block-title">Languages</h2>
                 <ul class="list-unstyled interests-list">
                     <li>한국어 <span class="lang-desc">(모국어)</span></li>
                     <li>영어 <span class="lang-desc">(기술 문서 활용 및 리서치 가능)</span></li>
                 </ul>
-            </div><!--//interests-->
+            </div>languages-container-->
             
             <div class="interests-container container-block">
                 <h2 class="container-block-title">Interests</h2>
@@ -95,14 +76,15 @@
         
         <div class="main-wrapper">
             
-            <section class="section summary-section">
+            <section class="section summary-section" id="profile">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Career Profile</h2>
                 <div class="summary">
+                    <p class="summary-highlight"><strong>핵심:</strong> 대규모 ETL 파이프라인 설계, RAG 기반 검색 아키텍처 도입, AI 기술 실무 적용 경험을 보유한 백엔드 개발자</p>
                     <p>Java와 Spring Boot를 주력으로 사용하는 4년 차 백엔드 개발자입니다. 지금까지 B2B 도메인에서 대규모 데이터 수집 및 ETL 파이프라인 구축, 인지 검색 로직 설계 등의 시스템 아키텍처 업무를 성공적으로 수행해 왔으며, 이를 바탕으로 향후 B2C 서비스로의 도약과 확장을 기대하고 있습니다. 최근에는 AI 기술(RAG, MCP 등)을 실무에 도입하고 최적화하는 데 깊은 관심을 두고 연구와 개발을 병행하고 있습니다.</p>
                 </div><!--//summary-->
             </section><!--//section-->
             
-            <section class="section experiences-section">
+            <section class="section experiences-section" id="experiences">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experiences</h2>
                 
                 <div class="item">
@@ -120,7 +102,7 @@
                 
             </section><!--//section-->
             
-            <section class="section projects-section">
+            <section class="section projects-section" id="projects">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>
                 <div class="intro">
                     <p>주요 프로젝트 진행 사항입니다.</p>
@@ -134,7 +116,115 @@
                 </div><!--//item-->
             </section><!--//section-->
             
-            <section class="skills-section section">
+            <section class="section education-section" id="education">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-graduation-cap"></i></span>Education &amp; Training</h2>
+                <div class="education-highlight">
+                    <p><strong>연세대학교 인공지능융합대학원 석사 과정 재학 중</strong> — AI 융합 연구와 백엔드/검색 서비스 설계 역량을 동시에 강화하고 있습니다.</p>
+                </div>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title school-name">연세대학교</h3>
+                            <div class="time"> - 2027.08 (졸업 예정)</div>
+                        </div><!--//upper-row-->
+                        <div class="company">인공지능융합대학원 (특수대학원) 석사 과정</div>
+                    </div><!--//meta-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">연세대학교</h3>
+                            <div class="time">2016.03 - 2022.08</div>
+                        </div><!--//upper-row-->
+                        <div class="company">신학/컴퓨터과학/스포츠레저학 학사</div>
+                    </div><!--//meta-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">삼성 청년 소프트웨어 아카데미 (SSAFY)</h3>
+                            <div class="time">2022.07 - 2022.11</div>
+                        </div><!--//upper-row-->
+                        <div class="company">실무 기반 웹 풀스택 프로젝트 및 알고리즘 역량 강화 과정</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>
+                        <strong>1. 알고리즘 및 CS 기초 역량 강화</strong><br>
+                        - 자료구조/알고리즘: Array, Stack/Queue, Linked List, Tree, Graph 및 BFS/DFS, DP, 완전탐색 학습.<br>
+                        - 문제 해결 능력: 고난도 코딩 테스트 문제 풀이 (SWEA/백준 골드 레벨 해결 능력 확보).<br>
+                        - CS 지식: 운영체제, 네트워크, 데이터베이스 등 개발 필수 전공 지식 심화 학습.<br>
+                        <br>
+                        <strong>2. 실무 기반 웹 풀스택 프로젝트 수행</strong><br>
+                        - 기술 스택: Java, Spring Boot, MyBatis, Vue.js, MySQL<br>
+                        - 프로젝트 개요: 공공 데이터 API를 활용한 '지역별 아파트 실거래가 조회 및 커뮤니티 서비스' 구축.<br>
+                        - 담당 역할: RESTful API 설계 및 DB 모델링 (ERD 설계), Spring Security를 활용한 JWT 인증/인가 구현, Git/GitLab을 활용한 형상 관리 및 코드 리뷰 문화 체득.
+                        </p>
+                    </div><!--//details-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">오라클기반 스프링 프레임워크 자바 개발자 양성 과정</h3>
+                            <div class="time">2020.09 - 2021.03</div>
+                        </div><!--//upper-row-->
+                        <div class="company">국내연수활동 (900시간)</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>ORACLE과 스프링프레임워크를 활용한 자바 기반 웹 애플리케이션 프로그램 구현 및 개발 교육과정 수료.</p>
+                    </div><!--//details-->
+                </div><!--//item-->
+
+            </section><!--//section-->
+
+            <section class="section certifications-section" id="certifications">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-certificate"></i></span>Certifications</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">정보처리기사</h3>
+                            <div class="time">2025.09.12</div>
+                        </div><!--//upper-row-->
+                        <div class="company">한국산업인력공단</div>
+                    </div><!--//meta-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">리눅스 마스터 2급</h3>
+                            <div class="time">2025.03.28</div>
+                        </div><!--//upper-row-->
+                        <div class="company">한국정보통신진흥협회</div>
+                    </div><!--//meta-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">SQLD</h3>
+                            <div class="time">2023.07.07</div>
+                        </div><!--//upper-row-->
+                        <div class="company">한국데이터산업진흥원</div>
+                    </div><!--//meta-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">컴퓨터활용능력시험 1급</h3>
+                            <div class="time">2021.09.10</div>
+                        </div><!--//upper-row-->
+                        <div class="company">대한상공회의소</div>
+                    </div><!--//meta-->
+                </div><!--//item-->
+            </section><!--//section-->
+
+            <section class="skills-section section" id="skills">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Skills &amp; Proficiency</h2>
                 <div class="skillset">        
                     <div class="item">
@@ -185,6 +275,8 @@
         </div><!--//container-->
     </footer><!--//footer-->
         
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html> 
 
