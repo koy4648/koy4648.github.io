@@ -10,21 +10,27 @@
     <meta name="description" content="김영서 포트폴리오">
     <meta name="author" content="Youngseo Kim">    
     <link rel="shortcut icon" href="favicon.ico">  
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Web Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 </head> 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="주요 메뉴">
         <div class="container">
-            <a class="navbar-brand" href="#">Youngseo Kim</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#profile">
+                <span class="brand-mark">YK</span>
+                <span>Youngseo Kim</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="메뉴 열기">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,19 +45,20 @@
             </div>
         </div>
     </nav>
-    <div class="wrapper mt-lg-5">
-        <div class="sidebar-wrapper">
+    <div class="wrapper">
+        <aside class="sidebar-wrapper">
             <div class="profile-container">
-                <img class="profile rounded-circle" style="max-width: 150px; width: 100%;" src="https://github.com/koy4648.png" alt="Youngseo Kim's Profile Image" />
-                <h1 class="name">김영서 (Youngseo Kim)</h1>
+                <img class="profile rounded-circle" src="https://github.com/koy4648.png" alt="김영서 프로필 사진" />
+                <p class="profile-eyebrow">Backend · AI Search</p>
+                <h1 class="name">김영서<br><span lang="en">Youngseo Kim</span></h1>
                 <h3 class="tagline">Backend Developer</h3>
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: koy4648@naver.com">koy4648@naver.com</a></li>
-                    <li class="website"><i class="fa-solid fa-globe"></i><a href="https://bl-nk.tistory.com/" target="_blank">bl-nk.tistory.com</a></li>
-                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/koy4648/" target="_blank">github.com/koy4648</a></li>
+                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto:koy4648@naver.com">koy4648@naver.com</a></li>
+                    <li class="website"><i class="fa-solid fa-globe"></i><a href="https://bl-nk.tistory.com/" target="_blank" rel="noopener noreferrer">bl-nk.tistory.com</a></li>
+                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/koy4648/" target="_blank" rel="noopener noreferrer">github.com/koy4648</a></li>
                 </ul>
             </div><!--//contact-container-->
             
@@ -72,68 +79,291 @@
                 </ul>
             </div><!--//interests-->
             
-        </div><!--//sidebar-wrapper-->
+        </aside><!--//sidebar-wrapper-->
         
-        <div class="main-wrapper">
+        <main class="main-wrapper">
             
             <section class="section summary-section" id="profile">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Career Profile</h2>
                 <div class="summary card-item">
-                    <p class="summary-highlight mb-4"><strong>💡 엔터프라이즈 환경에 최적화된 <span class="highlight-text">RAG 기반 AI 검색 아키텍처 구축과 최적화</span>에 특화된 백엔드 엔지니어입니다.</strong></p>
+                    <p class="summary-highlight mb-4"><strong>엔터프라이즈 환경에 최적화된 <span class="highlight-text">RAG 기반 AI 검색 아키텍처 구축과 최적화</span>에 특화된 백엔드 엔지니어입니다.</strong></p>
                     <p>현재 연세대학교 인공지능융합대학원 석사 과정에 재학 중이며, <span class="highlight-text">단순히 API만 찍어내는 개발자가 아니라 AI 모델(RAG, Agentic AI 등)을 서비스 아키텍처에 유연하게 녹여낼 줄 아는</span> 백엔드 엔지니어입니다.</p>
                     <p>B2B 도메인에서 대규모 데이터 수집 및 ETL 파이프라인 구축 등의 백엔드 시스템 설계 업무를 성공적으로 수행해 왔습니다. 이러한 탄탄한 개발 역량을 바탕으로, 향후 대규모 트래픽이 발생하는 B2C 서비스로의 확장과 고도화를 이끌어갈 준비가 되어 있습니다.</p>
                 </div><!--//summary-->
             </section><!--//section-->
             
-            <section class="section experiences-section" id="experiences">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experiences</h2>
-                
-                <div class="item card-item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title" style="font-weight: 700; color: #1E293B; font-size: 18px;">백엔드 개발자</h3>
-                            <div class="time">2023.01 - 현재</div>
-                        </div><!--//upper-row-->
-                        <div class="company">솔트룩스 (수행본부)</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>공공/엔터프라이즈 대상 검색 시스템 구축 및 백엔드 시스템 개발 RAG 기반 아키텍처 도입 및 최적화, 외부 데이터 연동 및 파이프라인 고도화 업무를 수행했습니다.</p>  
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-            </section><!--//section-->
-            
-            <section class="section projects-section" id="projects">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>
-                <!-- <div class="intro">
-                    <p>주요 프로젝트 진행 사항입니다.</p>
-                </div> -->
-                <div class="item card-item">
-                    <div class="project-title" style="font-weight: 700; color: #1E293B; font-size: 16px;">스마트 양식장 의사결정 지원 시스템 (NIPA)<span class="badge bg-light text-secondary border float-end" style="font-size:12px; font-weight: 500;">2024.07 - 진행중</span></div>
-                    <ul class="mt-3 mb-0 text-muted" style="line-height: 1.8;">
-                        <li>해조류 및 전복 양식 공공 데이터 포털 수집을 위한 자동화 파이프라인 구축</li>
-                        <li><span class="highlight-text" style="color: #0f172a;">MongoDB에서 RDBMS로의 대용량 ETL 파이프라인 설계</span> 및 동기화 최적화</li>
-                        <li>도메인 특화 데이터 검색 성능 최적화로 B2B 대용량 데이터 처리 안정성 확보</li>
-                    </ul>
-                </div><!--//item-->
-                
-                <div class="item card-item">
-                    <div class="project-title" style="font-weight: 700; color: #1E293B; font-size: 16px;">서울교통공사 안전 GPT <span class="badge bg-light text-secondary border float-end" style="font-size:12px; font-weight: 500;">2023.07 - 2023.12</span></div>
-                    <ul class="mt-3 mb-0 text-muted" style="line-height: 1.8;">
-                        <li><span class="highlight-text" style="color: #0f172a;">RAG(검색 증강 생성) 기반의 사내 문서 검색 아키텍처</span> 직접 설계 및 구현</li>
-                        <li>방대한 규정 및 매뉴얼 문서 청킹(Chunking) 및 벡터 임베딩(Vector Embedding) 파이프라인 구축</li>
-                        <li>사용자 질의 의도 파악과 프롬프트 엔지니어링을 통한 검색 결과 정확도 및 답변 품질 고도화</li>
-                    </ul>
-                </div><!--//item-->
+           <section class="section experiences-section" id="experiences">
+    <h2 class="section-title">
+        <span class="icon-holder">
+            <i class="fa-solid fa-briefcase"></i>
+        </span>
+        Experiences
+    </h2>
 
-                <!-- <div class="item card-item">
-                    <div class="project-title" style="font-weight: 700; color: #1E293B; font-size: 16px;">Odit API <span class="badge bg-primary ms-2" style="font-size:11px;">진행 중</span></div>
-                    <ul class="mt-3 mb-0 text-muted" style="line-height: 1.8;">
-                        <li>현재 <span class="highlight-text" style="color: #0f172a;">Spring Boot + JPA + Redis</span> 아키텍처 기반으로 확장성 높은 백엔드 API 서비스 구축 중</li>
-                        <li>향후 AWS EC2 및 RDS 인프라 구축과 CI/CD 클라우드 배포 파이프라인 완성 예정</li>
-                    </ul>
-                </div> -->
-            </section><!--//section-->
+    <div class="item card-item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title"
+                    style="font-weight: 700; color: #1E293B; font-size: 18px;">
+                    백엔드 개발자
+                </h3>
+                <div class="time">2023.01 - 현재</div>
+            </div>
+
+            <div class="company">솔트룩스 · 수행본부</div>
+        </div>
+
+        <div class="details">
+            <blockquote class="mt-3 mb-3"
+                        style="
+                            margin-left: 0;
+                            padding: 12px 16px;
+                            border-left: 4px solid #42A8C0;
+                            background-color: #F8FAFC;
+                            color: #475569;
+                            font-size: 14px;
+                            line-height: 1.7;
+                        ">
+                공공·엔터프라이즈 환경에서 RAG 기반 AI 검색 서비스와
+                대규모 데이터 처리 백엔드를 개발하고 있습니다.
+            </blockquote>
+
+            <ul class="mb-0 text-muted"
+                style="line-height: 1.9; padding-left: 20px;">
+                <li class="mb-2">
+                    <strong style="color: #0F172A;">RAG 백엔드 개발</strong>
+                    문서 색인, 검색, LLM 연동을 위한 API와 데이터 처리 로직 구현
+                </li>
+
+                <li class="mb-2">
+                    <strong style="color: #0F172A;">데이터 파이프라인 구축</strong>
+                    외부 데이터 수집, 정규화, ETL 및 검색 색인 프로세스 개발
+                </li>
+
+                <li class="mb-2">
+                    <strong style="color: #0F172A;">시스템 연동</strong>
+                    검색엔진, 데이터베이스, AI 모델 간 인터페이스 설계 및 연동
+                </li>
+
+                <li>
+                    <strong style="color: #0F172A;">서비스 안정성 개선</strong>
+                    대량 데이터 처리 과정의 중복, 예외 및 장애 상황을 고려한 백엔드 로직 개선
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="section projects-section" id="projects">
+    <h2 class="section-title">
+        <span class="icon-holder">
+            <i class="fa-solid fa-archive"></i>
+        </span>
+        Projects
+    </h2>
+
+    <!-- 스마트 양식장 의사결정 지원 시스템 -->
+    <div class="item card-item">
+        <div class="project-title"
+             style="font-weight: 700; color: #1E293B; font-size: 16px;">
+            스마트 양식장 의사결정 지원 시스템 (NIPA)
+
+            <span class="badge bg-light text-secondary border float-end"
+                  style="font-size: 12px; font-weight: 500;">
+                2024.07 - 진행 중
+            </span>
+        </div>
+
+        <blockquote class="mt-3 mb-3"
+                    style="
+                        margin-left: 0;
+                        padding: 12px 16px;
+                        border-left: 4px solid #42A8C0;
+                        background-color: #F8FAFC;
+                        color: #475569;
+                        font-size: 14px;
+                        line-height: 1.7;
+                    ">
+            김·전복 양식 어민에게 공공데이터와 검색 결과를 기반으로
+            양식장 운영에 필요한 정보를 제공하는 RAG 기반 의사결정 지원 서비스
+        </blockquote>
+
+        <ul class="mb-3 text-muted"
+            style="line-height: 1.9; padding-left: 20px;">
+            <li class="mb-2">
+                <strong style="color: #0F172A;">데이터 수집 파이프라인</strong>
+                공공데이터와 외부 웹 데이터를 주기적으로 수집하고 서비스 형식에 맞게 정규화
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">대용량 ETL</strong>
+                MongoDB의 비정형 수집 데이터를 변환하여 MySQL 서비스 테이블로 적재
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">데이터 품질 개선</strong>
+                URL 중복 검사, 불용어 필터링, 날짜 형식 정규화 및 본문·이미지 데이터 가공
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">적재 안정성 확보</strong>
+                중복 및 개별 데이터 오류를 분리 처리하여 일부 오류로 인한 전체 파이프라인 중단 방지
+            </li>
+
+            <li>
+                <strong style="color: #0F172A;">비동기 처리</strong>
+                대량 데이터 처리 작업을 비동기로 실행하고 처리 상태를 로그로 관리
+            </li>
+        </ul>
+
+        <p class="mb-0 small text-secondary"
+           style="line-height: 1.7;">
+            <strong style="color: #334155;">Tech</strong>
+            · Java 17
+            · Spring Boot 3
+            · Spring Data JPA
+            · MongoDB
+            · MySQL
+            · Elasticsearch
+            · Docker
+        </p>
+    </div>
+
+
+    <!-- KSPO 문서 기반 RAG 시연 시스템 -->
+    <div class="item card-item">
+        <div class="project-title"
+             style="font-weight: 700; color: #1E293B; font-size: 16px;">
+            KSPO 문서 기반 RAG 시연 시스템
+
+            <span class="badge bg-light text-secondary border float-end"
+                  style="font-size: 12px; font-weight: 500;">
+                2025.11 · 2주
+            </span>
+        </div>
+
+        <blockquote class="mt-3 mb-3"
+                    style="
+                        margin-left: 0;
+                        padding: 12px 16px;
+                        border-left: 4px solid #42A8C0;
+                        background-color: #F8FAFC;
+                        color: #475569;
+                        font-size: 14px;
+                        line-height: 1.7;
+                    ">
+            일반 파싱의 처리 속도와 Document AI의 문서 인식 품질을 결합한
+            문서 기반 RAG 질의응답 시연 시스템
+        </blockquote>
+
+        <ul class="mb-3 text-muted"
+            style="line-height: 1.9; padding-left: 20px;">
+            <li class="mb-2">
+                <strong style="color: #0F172A;">검색 문맥 확장</strong>
+                Hybrid Search로 검색된 Top-K Chunk의 원본 페이지와 앞뒤 인접 페이지 조회
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">Augmenter 모듈 개발</strong>
+                Document AI로 재파싱된 페이지 데이터를 입력받아 페이지 순서와 텍스트 길이를 검증
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">LLM 입력 구성</strong>
+                입력 길이 제한을 고려하여 허용 범위 내에서 페이지 텍스트를 순차적으로 결합
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">모듈 연동</strong>
+                검색 결과, 원본 문서, Document AI 파싱 결과를 연결하는 백엔드 추론 흐름 구현
+            </li>
+
+            <li>
+                <strong style="color: #0F172A;">문서 라우팅</strong>
+                문서 제목과 페이지 수 등의 메타데이터를 활용해 사전 파싱 문서와 현장 업로드 문서 판별
+            </li>
+        </ul>
+
+        <p class="mb-0 small text-secondary"
+           style="line-height: 1.7;">
+            <strong style="color: #334155;">Tech</strong>
+            · Java
+            · Spring Boot
+            · Elasticsearch
+            · Hybrid Search
+            · RAG
+            · Document AI
+        </p>
+    </div>
+
+
+    <!-- 서울교통공사 안전 GPT -->
+    <div class="item card-item">
+        <div class="project-title"
+             style="font-weight: 700; color: #1E293B; font-size: 16px;">
+            서울교통공사 안전 GPT
+
+            <span class="badge bg-light text-secondary border float-end"
+                  style="font-size: 12px; font-weight: 500;">
+                2023.07 - 2023.12
+            </span>
+        </div>
+
+        <blockquote class="mt-3 mb-3"
+                    style="
+                        margin-left: 0;
+                        padding: 12px 16px;
+                        border-left: 4px solid #42A8C0;
+                        background-color: #F8FAFC;
+                        color: #475569;
+                        font-size: 14px;
+                        line-height: 1.7;
+                    ">
+            사내 규정과 안전 매뉴얼을 검색하고 관련 문서를 근거로 답변을 제공하는
+            엔터프라이즈 문서 검색형 RAG 서비스
+        </blockquote>
+
+        <ul class="mb-3 text-muted"
+            style="line-height: 1.9; padding-left: 20px;">
+            <li class="mb-2">
+                <strong style="color: #0F172A;">문서 색인 파이프라인</strong>
+                규정 및 안전 문서의 전처리, 청킹, 임베딩 및 검색 색인 프로세스 구현
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">RAG 질의응답</strong>
+                사용자 질의와 관련된 문서를 검색하고 결과를 LLM 입력 데이터로 구성
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">데이터 전처리</strong>
+                문서 내 불필요한 데이터와 중복 내용을 제거하고 검색 가능한 형태로 가공
+            </li>
+
+            <li class="mb-2">
+                <strong style="color: #0F172A;">검색 품질 개선</strong>
+                검색 결과를 검토하며 Chunk 크기, 문서 처리 기준 및 검색 설정 보완
+            </li>
+
+            <li>
+                <strong style="color: #0F172A;">답변 품질 관리</strong>
+                사용자 피드백과 답변 결과를 바탕으로 프롬프트 및 데이터 처리 기준 개선
+            </li>
+        </ul>
+
+        <p class="mb-0 small text-secondary"
+           style="line-height: 1.7;">
+            <strong style="color: #334155;">Tech</strong>
+            · Java
+            · Spring Boot
+            · Elasticsearch
+            · Vector Search
+            · RAG
+            · LLM
+        </p>
+    </div>
+</section>
             
             <section class="section education-section" id="education">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-graduation-cap"></i></span>Education &amp; Training</h2>
@@ -262,8 +492,9 @@
                 </div><!--//item-->
             </section><!--//section-->
 
+            <section class="skills-section section" id="skills">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Skills &amp; Research</h2>
-            <section class="skills-section section card-item" id="skills" style="padding: 32px;">
+                <div class="card-item skills-card">
                 
                 <div class="mb-4">
                     <h3 class="level-title mb-3" style="font-size: 15px; font-weight: 700; color: #1E293B;"><i class="fa-solid fa-server text-primary me-2"></i>Backend &amp; DB</h3>
@@ -292,9 +523,10 @@
                         <span class="badge bg-white text-dark border shadow-sm me-2 mb-2 px-3 py-2" style="font-size: 13px; font-weight: 500;">🧠 Machine Unlearning</span>
                     </div>
                 </div>
+                </div>
             </section><!--//skills-section-->
             
-        </div><!--//main-body-->
+        </main><!--//main-body-->
     </div>
  
     <footer class="footer">
@@ -305,7 +537,6 @@
     </footer><!--//footer-->
         
     <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html> 
-
